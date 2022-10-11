@@ -1,26 +1,35 @@
 # FlaskIntroduction
-Task Manager using Flask framework
-`cd FlaskIntroduction`
 
-first create virtual env 
-`python3 -m venv flask-project`
+# Hosting app locallyT
 
-Start virtual environment
-`source flask-project/bin/activate`
+go into root directory: `cd FlaskIntroduction`
 
+create virtual env : `python3 -m venv flask-project`
 
-Then pip3 install two packages
-`pip3 install flask flask-sqlalchemy`
+Start virtual environment : `source flask-project/bin/activate`
 
+pip3 install dependencies :`pip3 install -r requirements.txt`
 
-Start Flask app 
-`python3 app.py`
+Start Flask app : `python3 app.py`
 
-go to internet Explorer 
-`localhost:5000`
+go to internet Explorer : `localhost:5000`
 
-Stop App completely
-`lsof -i:5000`
+# Stop App completely
 
-find the process number of python
-`kill -9 <PID>`
+find the PID : `lsof -i:5000`
+
+kill the process : `kill -9 <PID>`
+
+# hosting app on heroku
+
+install dependencies : `pip3 install gunicorn`
+
+add all dependencies in requirements.txt : `pip freeze > requirements.txt`
+
+Create Proc File with content : `web: gunicorn app:app`
+
+git add commit and push changes to repo.
+
+`heroku login`
+`heroku create <unique_app_name>``
+`heroku push heroku <branch>` (main/master)
