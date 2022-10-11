@@ -1,5 +1,7 @@
 # FlaskIntroduction
 
+Find the App hosted at : `https://flasktutorialtaskmanager.herokuapp.com/`
+
 # Hosting app locally
 
 go into root directory: `cd FlaskIntroduction`
