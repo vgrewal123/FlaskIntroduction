@@ -1,6 +1,6 @@
 # FlaskIntroduction
 
-# Hosting app locallyT
+# Hosting app locally
 
 go into root directory: `cd FlaskIntroduction`
 
@@ -31,5 +31,7 @@ Create Proc File with content : `web: gunicorn app:app`
 git add commit and push changes to repo.
 
 `heroku login`
-`heroku create <unique_app_name>``
-`heroku push heroku <branch>` (main/master)
+
+`heroku create <unique_app_name>`
+
+`heroku push heroku <branch>(main/master)`
